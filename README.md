@@ -45,7 +45,7 @@ Raw taxi data contains significant noise, requiring strict data validation param
 ### Operational Insight
 Our time-series aggregation reveals that driver yield fluctuates drastically based on the clock. 
 
-![Weekly Fare Heatmap](notebooks/weekly_fare_heatmap.png)
+![Weekly Fare Heatmap](images/weekly_demand.png)
 *Figure 1: Average fare yields peaking during specialized evening blocks and late-night weekend operational windows.*
 
 ---
@@ -65,7 +65,7 @@ In a driver-facing scenario, **Precision for Class 1 (Generous Tip)** is our pri
 ### Drivers of Tipping Behavior
 Evaluating model properties gives us immediate clarity on why riders choose to tip generously:
 
-![Feature Importance](notebooks/feature_importance.png)
+![Feature Importance](images/generous_tipping_drivers.png)
 *Figure 2: Global feature importances derived from our Random Forest Architecture.*
 
 > **Key Takeaway:** Counter-intuitively, `fare_amount` heavily impacts the baseline classification threshold. Because tip percentages are relative, higher base fares structurally require a massive absolute dollar amount to clear the 20% mark, making shorter, high-efficiency trips prime real estate for maximizing tip margins.
