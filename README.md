@@ -32,6 +32,7 @@ nyc-taxi-optimization/
 │
 ├── requirements.txt       # Environment dependencies
 └── README.md
+```
 
 ## 🧼 Phase 1: Data Hygiene & Feature Engineering
 Raw taxi data contains significant noise, requiring strict data validation parameters to prevent downstream model degradation.
